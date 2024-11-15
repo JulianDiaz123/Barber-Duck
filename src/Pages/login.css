@@ -1,0 +1,94 @@
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url("../assets/img/estudiar-barberia.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  overflow: hiddens;
+  margin: 0;
+  overflow: hidden;
+}
+
+.login {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 40%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  border-radius: 30px;
+  box-shadow: 0 0 20px 5px rgb(0, 0, 0);
+  margin: 50px 20px;
+  backdrop-filter: blur(5px);
+}
+
+.login h2 {
+  font-size: clamp(1.5rem, 5vw, 2rem);
+}
+.login .inputs {
+  margin: 10px 0;
+  width: 100%;
+  max-width: 70%;
+  border-radius: 5px;
+  padding: 10px;
+  border: 2px solid rgb(71, 71, 71);
+  background-color: rgb(36, 36, 36);
+  color: white;
+}
+
+.login input:focus {
+  outline: none;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.login .btn-login {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  background-color: rgb(36, 36, 36);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 15px;
+  border: 2px solid rgb(71, 71, 71);
+  transition: all 0.3s;
+  margin: 15px;
+}
+
+.login .btn-login:hover {
+  background-color: rgb(20, 20, 20);
+  transform: scale(1.05);
+}
+
+.login .btn-login:active {
+  background-color: rgb(36, 36, 36);
+  transform: scale(0.95);
+}
+
+.login a {
+  margin-top: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+}
+
+.login a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .login {
+    width: 100%;
+    margin: 0;
+    height: 100vh;
+    border-radius: 0;
+  }
+  .login .inputs {
+    max-width: 100%;
+  }
+}

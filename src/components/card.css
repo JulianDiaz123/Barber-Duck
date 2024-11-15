@@ -1,0 +1,139 @@
+/* .card-container {
+  box-sizing: border-box;
+  background-color: #6e573c;
+  position: relative;
+  padding: 15px;
+  border-radius: 30px 10px 10px 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.747);
+  overflow: hidden;
+  height: 20rem;
+  width: 15rem;
+  margin: auto;
+}
+
+.card-container img {
+  width: 100%;
+  height: 150px;
+  border: 2px solid black;
+  box-sizing: border-box;
+  border-radius: 20px 10px 0 0;
+}
+.card-container .producto {
+  margin: 0;
+}
+.card-container .marca {
+  margin: 0;
+}
+.card-container .precio {
+  margin: 0;
+  background-color: red;
+  border: 2px solid black;
+}
+
+.card-container .btn-info {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+}
+.btn-control {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-control button {
+  padding: 10px;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.btn-control button:hover {
+  transform: scale(1.05);
+}
+
+.card-container .btn-control .delete-btn {
+  background-color: red;
+}
+.card-container .btn-control .put-btn {
+  background-color: gray;
+} */
+
+.card-container {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  color: black;
+  position: relative;
+  padding: 15px;
+  border-radius: 30px 10px 10px 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.747);
+  overflow: hidden;
+  height: 20rem;
+  width: 15rem;
+  margin: auto;
+}
+
+.card-container img {
+  width: 100%;
+  height: 150px;
+
+  box-sizing: border-box;
+  border-radius: 20px 10px 0 0;
+}
+.card-container .producto {
+  margin: 0;
+}
+.card-container .marca {
+  margin: 0;
+}
+.card-container .precio {
+  margin: 0;
+  color: #fff;
+  background-color: rgb(104, 79, 79);
+}
+
+.card-container .btn-info {
+  background-color: rgb(104, 79, 79);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  text-decoration: none;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+}
+
+.btn-control {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.btn-control button {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.btn-control button:hover {
+  transform: scale(1.05);
+}
+
+.card-container .btn-control .delete-btn {
+  background-color: red;
+  border-radius: 10px 0 0 10px;
+}
+.card-container .btn-control .put-btn {
+  background-color: gray;
+}

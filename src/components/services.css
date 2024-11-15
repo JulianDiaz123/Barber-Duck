@@ -1,0 +1,48 @@
+/*Estilos de los servicios*/
+.servicios-container {
+  width: 85%;
+  height: 60vh;
+  margin: 20px auto;
+  padding: 20px 0;
+  border-radius: 20px;
+  overflow: scroll;
+  background-image: linear-gradient(
+    to right,
+    rgb(40, 40, 40),
+    rgb(61, 61, 61),
+    rgb(91, 91, 91)
+  );
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.servicios-container ul {
+  text-align: start;
+  display: grid;
+}
+.servicios-container ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 0;
+  padding: 5px;
+}
+
+.add-service {
+  width: 100px;
+  height: auto;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.delete-service {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 30%;
+}

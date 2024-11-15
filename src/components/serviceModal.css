@@ -1,0 +1,45 @@
+.service_content {
+  background: rgba(0, 0, 0, 0.804);
+  width: 80%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.service_content h3 {
+  margin: 20px auto;
+}
+
+.service_content form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.btn-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  padding: 5px;
+}
+.service_content form input {
+  padding: 5px;
+  width: 70%;
+}
+.subm-service {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 30%;
+  margin: 10px 0;
+  background-color: green;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

@@ -1,0 +1,142 @@
+.nosotros-info {
+  background-color: rgba(27, 27, 27, 0.95);
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.info-container {
+  width: 50%;
+  background-color: rgb(61, 61, 61);
+  margin-right: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+.nosotros {
+  width: 100%;
+}
+.nosotros h2 {
+  margin: 0;
+}
+.nosotros p {
+  margin: 0 10px;
+}
+.mision {
+  width: 100%;
+}
+.mision h3 {
+  margin: 0;
+}
+.mision p {
+  margin: 0 10px;
+}
+
+.nosotros-img {
+  /* background-image: url("https://tunegociobonito.com/wp-content/uploads/2020/04/decoracion-de-peluqueria-masculina.jpg.webp"); */
+  background-image: url("../assets/img/decoracion-de-peluqueria-masculina.jpg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  width: 50%;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.contacto .redes {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 10px;
+}
+.contacto .redes i {
+  cursor: pointer;
+  font-size: 50px;
+  border-radius: 10px;
+  transition: box-shadow 0.3s;
+}
+
+.icon-facebook {
+  background-color: blue;
+}
+.icon-facebook:hover {
+  box-shadow: 0 0 10px rgb(69, 57, 165);
+}
+.icon-mail {
+  background-color: red;
+}
+.icon-mail:hover {
+  box-shadow: 0 0 10px rgb(158, 52, 52);
+}
+.icon-instagram {
+  background: radial-gradient(ellipse at top, red, transparent),
+    radial-gradient(ellipse at bottom, yellow, transparent),
+    radial-gradient(ellipse at right, purple, transparent),
+    radial-gradient(ellipse at left, rgb(255, 0, 43), transparent);
+  position: relative;
+  z-index: 2;
+}
+.icon-instagram::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at top, red, transparent),
+    radial-gradient(ellipse at bottom, yellow, transparent),
+    radial-gradient(ellipse at right, purple, transparent),
+    radial-gradient(ellipse at left, rgb(255, 0, 43), transparent);
+  filter: blur(5px);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.icon-instagram:hover::after {
+  opacity: 1;
+}
+
+.icon-whatsapp {
+  background-color: green;
+}
+.icon-whatsapp:hover {
+  box-shadow: 0 0 10px lightgreen;
+}
+@media (max-width: 768px) {
+  .nosotros-info {
+    flex-direction: column;
+    padding: 0;
+    padding-block: 10px;
+    align-items: center;
+  }
+  .info-container {
+    width: 90%;
+    border-radius: 10px 10px 0 0;
+    padding: 0;
+    margin-right: 0;
+    padding-block: 10px;
+  }
+  .nosotros {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  .linea {
+    width: 100%;
+    height: 10px;
+    background-color: rgb(100, 99, 99);
+  }
+  .mision {
+    margin: 0;
+    padding: 0;
+  }
+  .nosotros-img {
+    width: 90%;
+    height: 200px;
+    border-radius: 0 0 10px 10px;
+    padding: 0;
+  }
+}

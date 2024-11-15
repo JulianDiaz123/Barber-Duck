@@ -1,0 +1,49 @@
+/*Estilo para los turnos*/
+.turno {
+  background-color: rgba(0, 0, 0, 0.63);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 2px solid white;
+  width: 50%;
+  margin: 10px auto;
+  padding: 25px;
+  position: relative;
+}
+
+.turno form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.inp-date {
+  padding: 5px;
+  width: min-content;
+  margin: auto;
+}
+.subm {
+  padding: 10px;
+  border: 2px solid black;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.info-turnos {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  margin: 20px;
+}
+.blocked {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.916);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,43 @@
+.cards-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+.cards-container ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+.cards-container ul li {
+  list-style: none;
+}
+.cards-container .control-products {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+.cards-container .control-products button {
+  background-color: black;
+  border: 2px solid white;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 50%;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.cards-container .control-products button:hover {
+  background-color: gray;
+}
+.cards-container .control-products button:active {
+  background-color: black;
+}
+
+.post-btn {
+  padding: 10px;
+  width: 30%;
+  min-width: 200px;
+  background-color: rgb(104, 79, 79);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}

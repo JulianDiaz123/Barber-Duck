@@ -1,0 +1,165 @@
+.homeContainer {
+  background-image: url("../assets/img/estudiar-barberia.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr 5rem;
+  grid-template-areas:
+    "homeHeader homeHeader homeHeader"
+    "homeMain homeMain homeMain"
+    "homeFooter homeFooter homeFooter";
+}
+
+.homeHeader {
+  grid-area: homeHeader;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.homeMain {
+  grid-area: homeMain;
+}
+.homeFooter {
+  grid-area: homeFooter;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/*Estilos para el nombre y logo de la pagina*/
+
+.header {
+  height: auto;
+  width: 100%;
+}
+.nombrePag {
+  margin-left: 15px;
+  width: max-content;
+  cursor: pointer;
+}
+.nombrePag a {
+  text-decoration: none;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: clamp(0.5rem, 3vw, 1.5rem);
+}
+/*Estilos para el menu*/
+:root {
+  --text-color: white;
+  --hover-background: rgba(119, 119, 119, 0.6);
+}
+
+.menu {
+  border-top: 2px solid var(--text-color);
+  border-bottom: 2px solid var(--text-color);
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  list-style: none;
+  z-index: 2;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+}
+
+.menuItem {
+  display: block;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 600;
+  padding: 10px 25px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.menuItem::after {
+  content: "";
+  width: 50px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: all 0.7s ease-in-out;
+}
+
+.menuItem:hover::after {
+  left: 100%;
+  opacity: 0;
+}
+/*Estilos de Login Sign Up*/
+.authContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  display: flex;
+}
+.authContainer .btn {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  border-radius: 5px;
+  padding: 3px;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 600;
+  font-size: clamp(0.5rem, 3vw, 1rem);
+  text-decoration: none;
+  display: flex;
+  place-items: center;
+}
+.authContainer .btn:hover {
+  background-color: white;
+  color: black;
+}
+.authContainer .btn:active {
+  background-color: black;
+  color: white;
+}
+
+.icon-user {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5px;
+  font-size: clamp(1.2rem, 6vw, 2rem);
+  border: 2px solid white;
+  color: white;
+  border-radius: 100%;
+  cursor: pointer;
+  background-color: black;
+  transition: all 0.3s;
+}
+.icon-user:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px white;
+}
+.icon-user:active {
+  transform: scale(0.95);
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .servicios-container {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .logoContainer {
+    place-items: start;
+  }
+}
